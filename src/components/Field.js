@@ -18,11 +18,11 @@ class Field extends React.Component {
             <div className="ui field">
                 <label>
                     <LanguageContext.Consumer>
-                        {(value) => {
-                            if(value === "dutch") {
+                        {({language}) => {
+                            if(language === "dutch") {
                                 return "Naam";
                             }
-                            else if(value === "french") {
+                            else if(language === "french") {
                                 return "Nom";
                             } 
                             else {
